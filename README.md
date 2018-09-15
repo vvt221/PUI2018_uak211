@@ -1,1 +1,1 @@
-NYU CUSP PUI assignemtns
+NYU CUSP PUI assignments
