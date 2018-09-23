@@ -11,3 +11,5 @@ The csv content:
 
 The now-empty local directory:
 ![](empty_dir.png)
+
+I completed part 2 of the assignment on my own, with reference to this [stackoverflow answer](https://stackoverflow.com/questions/13872533/plot-different-dataframes-in-the-same-figure#13873014) to help me plot two aggregated variables using df.plot().
