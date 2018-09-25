@@ -21,11 +21,10 @@ except:
     print('Error: ' + data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['ErrorCondition']['Description'])
     sys.exit()
 
-number_active_buses = len(active_buses)
 
 print('Bus Line : ' + bus_line + '\nNumber of Active Buses : ' + str(number_active_buses))
 
-for i in range(number_active_buses):
+for i in range(len(number_active_buses)):
     print('Bus ' + str(i) + ' is at latitude ' + str(active_buses[i]['MonitoredVehicleJourney']['VehicleLocation']['Latitude']) + 
           ' and longtitude ' + str(active_buses[i]['MonitoredVehicleJourney']['VehicleLocation']['Longitude']))
 
