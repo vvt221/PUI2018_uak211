@@ -22,7 +22,7 @@ except:
     sys.exit()
 
 
-print('Bus Line : ' + bus_line + '\nNumber of Active Buses : ' + str(number_active_buses))
+print('Bus Line : ' + bus_line + '\nNumber of Active Buses : ' + str(active_buses))
 
 for i in range(len(active_buses)):
     print('Bus ' + str(i) + ' is at latitude ' + str(active_buses[i]['MonitoredVehicleJourney']['VehicleLocation']['Latitude']) + 
