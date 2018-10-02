@@ -11,14 +11,16 @@ if not len(sys.argv) == 4:
 
 key = sys.argv[1]
 bus_line = sys.argv[2]
-url = 'http://bustime.mta.info/api/siri/vehicle-monitoring.json?key='+key+'&VehicleMonitoringDetailLevel=calls&LineRef='+bus_line
+url = 'http://bustime.mta.info/api/siri/vehicle-monitoring.json?key='+key+ \
+'&VehicleMonitoringDetailLevel=calls&LineRef='+bus_line
 
 data = requests.get(url).json()
 
 try:
     bus_progress = data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']
 except:
-    print('Error: ' + data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['ErrorCondition']['Description'])
+    print('Error: ' + data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0] \
+          ['ErrorCondition']['Description'])
     sys.exit()
 
 
@@ -32,5 +34,6 @@ with open(sys.argv[3],'w') as fout:
             stop_status = 'N/A' 
         else:
             stop_name = str(bus_progress[i]['MonitoredVehicleJourney']['MonitoredCall']['StopPointName'])
-            stop_status = str(bus_progress[i]['MonitoredVehicleJourney']['OnwardCalls']['OnwardCall'][0]['Extensions']['Distances']['PresentableDistance'])
+            stop_status = str(bus_progress[i]['MonitoredVehicleJourney']['OnwardCalls'] \
+                              ['OnwardCall'][0]['Extensions']['Distances']['PresentableDistance'])
             fout.write('{},{},{},{}\n'.format(lat, long, stop_name, stop_status))
