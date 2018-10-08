@@ -27,3 +27,7 @@ main plots presented in papers:
 
 #### assignment 3: reproducing post-prison employment study
 i completed this assignment on my own with no need to reference material
+
+#### assignment 4: citibike populations tests of correlation
+i was lucky to have already written functions to pull data for two separate months, one winter and one summer, for HW4. i have no experience with geopandas, but have worked with the rgeos, rgdal, and sp packages in R, so i wrote a script in R to identify the bike station boroughs. 
+
