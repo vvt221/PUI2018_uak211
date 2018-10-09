@@ -1,0 +1,3 @@
+The null and alternative hypotheses are formulated correctly. Required features to conduct statistical tests have been kept while columns that are not required have been dropped. As it is unclear whether there are NaNs in the data, it might be helpful to include a line of code to drop the NaNs just in case. The density plot shows that the hypothesis is worth investigating, for corroboration with the plot. 
+
+The data is numerical and unpaired. The distribution does not seem to resemble a gaussian distribution, so a non-parametric test should be used. The Mann-Whitney/Wilcoxon's Rank Sum test is a suitable statistical test.
