@@ -1,4 +1,5 @@
 for these assignments, sam manzi and i discussed general approaches, but we both completed the work on our own.
+for assignment 2, nathan caplan and i collaborated on interpreting the articles.
 
 
 #### assignment 1:
